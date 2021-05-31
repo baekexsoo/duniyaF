@@ -3,21 +3,19 @@
 # We label our stage as 'builder'
 FROM node:14-alpine as builder
 
-COPY package*.json ./
+RUN mkdir /ng-app
+
+WORKDIR /ng-app
+
+COPY . .
 
 # RUN npm install @angular/cli@10.2.3
 RUN npm install -g @angular/cli@10.2.3
 
 RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
 
-RUN npm install
-
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
-RUN npm i && mkdir /ng-app
-
-WORKDIR /ng-app
-
-COPY . .
+RUN npm install
 
 # RUN npm install typescript@">=3.1.1 <3.3.0"
 
