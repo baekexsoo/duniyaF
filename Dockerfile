@@ -2,6 +2,7 @@
 
 # We label our stage as 'builder'
 FROM node:14-alpine as builder
+RUN npm install @angular/cli
 
 COPY package*.json ./
 
@@ -16,24 +17,9 @@ WORKDIR /ng-app
 
 COPY . .
 
-RUN npm install typescript@">=3.1.1 <3.3.0"
-
-## Build the angular app in production mode and store the artifact in dist folder
-CMD $(npm bin)/ng  serve  --host 0.0.0.0 --disableHostCheck true
+# RUN npm install typescript@">=3.1.1 <3.3.0"
 
 EXPOSE 4200
-### STAGE 2: Setup ###
 
-#FROM nginx:1.13.3-alpine
-
-## Copy our default nginx config
-#COPY nginx/default.conf /etc/nginx/conf.d/
-
-## Remove default nginx website
-#RUN rm -rf /usr/share/nginx/html/*
-
-## From 'builder' stage copy over the artifacts in dist folder to default nginx public folder
-#COPY --from=builder /ng-app/dist /usr/share/nginx/html
-
-
-#CMD ["nginx", "-g", "daemon off;"]
+## Build the angular app in production mode and store the artifact in dist folder
+CMD ng serve --host 0.0.0.0 --disableHostCheck true
