@@ -6,7 +6,7 @@ FROM node:14-alpine as builder
 COPY package*.json ./
 
 # RUN npm install @angular/cli@10.2.3
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli@10.2.3
 
 RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
 
