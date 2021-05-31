@@ -1,0 +1,112 @@
+[
+    {
+      
+        "title": "Arachide",
+        "price": "350F le KG",
+        "quantity": "500KG Disponibles"
+        
+       
+    },
+    {
+        "title": "Igname",
+        "price": "1300F la Fécule",
+        "quantity": "1 Tonne disponible"
+        
+    },
+    {
+        "title": "Mangue",
+        "price": "650F le KG",
+        "quantity": "100KG disponibles"
+       
+    },
+    {
+        "title": "Gingembre",
+        "price": "200F le Sachet",
+        "quantity": "1 Tonne disponible"
+       
+    },
+    {
+        "title": "Laitue",
+        "price": "100F la Grappe",
+        "quantity": "1 Tonne disponible"
+       
+    },
+    {
+        "title": "Tomate",
+        "price": "450F le KG",
+        "quantity": "1 Tonne disponible"
+       
+    },
+    {
+        "title": "Igname",
+        "price": "1300F la Fécule",
+        "quantity": "1 Tonne disponible"
+        
+    },
+    {
+        "title": "Igname",
+        "price": "1300F la Fécule",
+        "quantity": "1 Tonne disponible"
+    },
+    {
+        "title": "Oeufs",
+        "price": "1200F le Plateau",
+        "quantity": "450 Plateaux disponibles"
+    },
+    {
+        "title": "Manioc",
+        "price": "900F la Fécule",
+        "quantity": "1 Tonne disponible"
+    },
+    {
+        "title": "Sorgho",
+        "price": "550F le KG",
+        "quantity": "167 KG disponibles"
+    },
+    {
+        "title": "Coco",
+        "price": "150F l'unité ",
+        "quantity": "1000 disponibles"
+    },
+    {
+        "title": "Bananes",
+        "price": "400F la Grappe",
+        "quantity": "1 Tonne disponible"
+    },
+    {
+        "title": "Ananas",
+        "price": "300F l'unité",
+        "quantity": "1 Tonne disponible"
+    },
+    {
+        "title": "Haricot",
+        "price": "350F-600F le KG",
+        "quantity": "1 Tonne disponible"
+    },
+    {
+        "title": "Voandzou",
+        "price": "1100F le KG",
+        "quantity": "1 Tonne disponible"
+    },
+    {
+        "title": "Piment",
+        "price": "750F le KG",
+        "quantity": "1 Tonne disponible"
+    },
+    {
+        "title": "Ail",
+        "price": "100F le Sachet",
+        "quantity": "1 Tonne disponible"
+    },
+    {
+        "title": "Noix De Palme",
+        "price": "500F le KG",
+        "quantity": "150KG disponibles"
+    },
+    {
+        "title": "Riz",
+        "price": "700F-1100F le KG",
+        "quantity": "1 Tonne disponible"
+    }
+  
+  ]
